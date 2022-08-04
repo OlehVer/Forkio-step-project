@@ -1,0 +1,23 @@
+@import "./vendors/reset.local.scss";
+@import "./vendors/normalize.scss";
+
+@import "./abstracts/_variables";
+@import "./abstracts/_mixins";
+
+@import "./layout/header";
+@import "./layout/section-editor";
+@import "./layout/section-get";
+@import "./layout/testimonials";
+@import "./layout/section-price";
+
+.container {
+    padding: 0 10px;
+    min-width: 320px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}

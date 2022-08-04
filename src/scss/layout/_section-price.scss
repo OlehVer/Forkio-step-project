@@ -1,0 +1,216 @@
+.price {
+    text-align: center;
+    padding-top: 0.2em;
+    padding-bottom: 0.7em;
+    background: #4B3B4E;
+    @include bckg-center;
+    
+    @media screen and (min-width: 481px) {
+        padding-top: 5em;
+        padding-bottom: 5em;
+        background: url(./images/price-bckg.svg), #4B3B4E;
+        background-position: top, bottom;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: 993px) {
+        padding-top: 7em;
+        padding-bottom: 7em;
+    }
+    
+    &__title {
+        @include Motserrat-bold;
+        font-size: 28px;
+        line-height: 42px;
+        color: $light-color;
+        padding-bottom: 1em;
+
+        @media screen and (min-width: 481px) {
+            font-size: 42px;
+            line-height: 44px;
+            padding-bottom: 1.5em;
+        }
+
+        @media screen and (min-width: 993px) {
+            font-size: 48px;
+            line-height: 50px;
+        }
+    }
+
+    &__card-wrapper {
+        display: grid;
+        grid-template-rows: repeat(4, minmax(min-content, max-content));
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        row-gap: 1em;
+        color: $light-color;
+        justify-items: center;
+
+        @media screen and (min-width: 481px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, minmax(min-content, max-content));
+            justify-items: flex-start;
+            column-gap: 1em;
+            row-gap: 70px;
+
+            .flex-end {
+                justify-self: flex-end;
+            }
+        }
+
+        @media screen and (min-width: 993px) {
+            grid-template-columns: 1fr 1fr minmax(min-content, 299px) 1fr;
+            grid-template-rows: repeat(1, minmax(min-content, max-content));
+            justify-items: center;
+
+            .flex-end {
+                justify-self: center;
+            }
+        }
+    }
+}
+
+.price__card {
+    display: flex;
+    flex-direction: column;
+    width: 257px;
+    background: rgba(255, 255, 255, 0.11);
+    @include Motserrat-regular;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 481px) {
+        min-width: 220px;
+        max-width: 257px;
+        width: 80%;
+    }
+
+    @media screen and (min-width: 993px) {
+        width: 100%;
+    }
+
+    &-header {
+        font-size: 24px;
+        line-height: 24px;
+        @include flex-center;
+        height: 97px;
+        background: rgba(255, 255, 255, 0.06);
+        margin-bottom: 30px;
+    }
+
+    &-value {
+        font-size: 60px;
+        line-height: 62px;
+        margin-bottom: 20px;
+
+        span {
+            @include Motserrat-bold;
+        }
+
+        @media screen and (min-width: 481px) {
+            line-height: 90px;
+        }
+    }
+
+    &-month {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 38px;
+    }
+
+    &-line {
+        width: 60px;
+        height: 5px;
+        background: $main-color;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    &-info {
+        height: 44px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 33px;
+        text-transform: capitalize;
+        @include flex-space;
+        flex-direction: column;
+
+        @media screen and (min-width: 481px) {
+            line-height: 18px;
+        }
+    }
+
+    &-button {
+        width: 160px;
+        height: 42px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 40px;
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+        margin-bottom: 39px;
+    }
+}
+
+.price__main {
+    display: flex;
+    flex-direction: column;
+    width: 299px;
+    min-width: 250px;
+    background: rgba(70, 48, 72, 0.84);
+
+    @media screen and (min-width: 481px) {
+        min-width: 220px;
+        max-width: 299px;
+        width: 100%;
+    }
+
+    &-header {
+        background: rgba(0, 0, 0, 0.11);
+        height: 111px;
+        margin-bottom: 14px;
+    }
+
+    &-value {
+        font-size: 82px;
+        line-height: 84px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 481px) {
+            line-height: 90px;
+        }
+    }
+
+    &-month {
+        margin-bottom: 46px;
+    }
+
+    &-line {
+        margin-bottom: 40px;
+    }
+
+    &-info {
+        height: 52px;
+        line-height: 32px;
+        margin-bottom: 83px;
+
+        @media screen and (min-width: 481px) {
+            line-height: 18px;
+        }
+    }
+
+    &-button {
+        width: 190px;
+        height: 52px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 40px;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-bottom: 39px;
+
+        @media screen and (min-width: 481px) {
+            margin-bottom: 47px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin Motserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin Motserrat-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin Lato-bold {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin Lato-regular {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin Lato-bold-italic {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@mixin bckg-center {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
