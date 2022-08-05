@@ -110,7 +110,7 @@
     }
 
     &__menu {
-        display: none;
+        display: block;
         width: 293px;
         height: 378px;
         background: #333333;
@@ -345,5 +345,27 @@
 
 .menu--active {
     display: block;
+    animation: anim 1s forwards;
+
+    @media screen and (min-width: 481px) {
+        animation: none;
+    }
 }
 
+.menu--hidden {
+    animation: anim2 1s forwards;
+
+    @media screen and (min-width: 481px) {
+        animation: none;
+    }
+}
+
+@keyframes anim {
+    0% {visibility: hidden; opacity: 0;}
+    100% {visibility: visible; opacity: 1;}
+}
+
+@keyframes anim2 {
+    1% {opacity: 1;}
+    100% {visibility: hidden; opacity: 0; display: none;}
+}
