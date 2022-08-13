@@ -18,7 +18,6 @@
 
 ## Команда
 Олена Міц
-
 Олег Вербинський
 
 
@@ -42,3 +41,4 @@
 
 
 ## Сайт проекту
+https://olehver.github.io/Forkio-step-project/

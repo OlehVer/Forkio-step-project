@@ -18,8 +18,7 @@ Step project after module Advanced HTML/CSS.
 
 ## Team
 Olena Mits
-
-Oleh Verbynski
+Oleh Verbynskyi
 
 
 ## Tasks
@@ -35,10 +34,11 @@ Olena Mits:
 - section "Here is what you get"
 - section "Fork Subscription Pricing"
 
-Oleh Verbynski:
+Oleh Verbynskyi:
 - site header
 - top and drop down menu
 - section "People Are Talking About Fork"
 
 
 ## Project website
+https://olehver.github.io/Forkio-step-project/
